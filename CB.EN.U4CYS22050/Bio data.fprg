@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Muthugirijan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 08:52:49 PM"/>
+        <attribute name="created" value="TXV0aHVnaXJpamFuO0RFU0tUT1AtVE8yRk9WNjsyMDIyLTEwLTI4OzA5OjE1OjI2IEFNOzM2MjU="/>
+        <attribute name="edited" value="TXV0aHVnaXJpamFuO0RFU0tUT1AtVE8yRk9WNjsyMDIyLTEwLTI5OzA4OjUyOjQ5IFBNOzk7Mzc2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RollNumber" type="Integer" array="False" size=""/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Address" type="String" array="False" size=""/>
+            <declare name="BloodGroup" type="String" array="False" size=""/>
+            <declare name="PhoneNumber" type="Integer" array="False" size=""/>
+            <declare name="DepartmentAssigned" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your RollNumber :&quot;" newline="True"/>
+            <input variable="RollNumber"/>
+            <output expression="&quot;Enter your Name :&quot;" newline="True"/>
+            <input variable="Name"/>
+            <output expression="&quot;Enter your Address :&quot;" newline="True"/>
+            <input variable="Address"/>
+            <output expression="&quot; Enter your Bloodgroup :&quot;" newline="True"/>
+            <input variable="Bloodgroup"/>
+            <output expression="&quot; Enter your PhoneNumber :&quot;" newline="True"/>
+            <input variable="PhoneNumber"/>
+            <output expression="&quot;Enter your DepartmentAssigned :&quot;" newline="True"/>
+            <input variable="DepartmentAssigned"/>
+            <output expression="&quot; Which Semeter :&quot;" newline="True"/>
+            <input variable="Semester"/>
+        </body>
+    </function>
+</flowgorithm>
