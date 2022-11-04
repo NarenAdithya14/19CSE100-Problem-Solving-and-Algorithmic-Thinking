@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:05:14 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzA5OjE0OjA3IEFNOzMzMTk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzExOjA1OjE0IEFNOzQ7MzQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to calculate C, when F is given"/>
+            <declare name="f, c" type="Real" array="False" size=""/>
+            <output expression="&quot;please enter your fahrenhiet temperature=&quot;" newline="True"/>
+            <input variable="f"/>
+            <assign variable="c" expression="(f-32)*5/9"/>
+            <output expression="&quot;the value of C=&quot;&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

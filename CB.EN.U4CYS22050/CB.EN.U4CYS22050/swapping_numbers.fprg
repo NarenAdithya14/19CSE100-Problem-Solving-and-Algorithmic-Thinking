@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:43:15 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzEwOjExOjQwIEFNOzMzMDU="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzEwOjQzOjE1IEFNOzU7MzQyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="exchanging the values of a and b to each other"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of a=&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the value of b=&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <output expression="&quot;value of B=&quot;&amp;b" newline="True"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;value of A=&quot;&amp;a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

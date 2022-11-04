@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:39:46 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzA5OjQwOjQ1IEFNOzMzMjA="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzEwOjM5OjQ2IEFNOzQ7MzQzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="finding the roots, through quadratic equation"/>
+            <output expression="&quot;input in turtn the coeficients a,b,c to the quadratic equation&quot;" newline="True"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <declare name="x1, x2" type="Real" array="False" size=""/>
+            <declare name="d" type="Real" array="False" size=""/>
+            <assign variable="d" expression="(b^2-4*a*c)"/>
+            <assign variable="x1" expression="(-b+sqrt(d))/(2*a)"/>
+            <assign variable="x2" expression="(b+sqrt(d))/2*a"/>
+            <output expression="x1" newline="True"/>
+            <output expression="x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

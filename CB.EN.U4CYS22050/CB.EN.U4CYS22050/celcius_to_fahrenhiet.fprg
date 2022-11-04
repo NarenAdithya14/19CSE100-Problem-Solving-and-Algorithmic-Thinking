@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:03:32 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzA5OjM0OjQzIEFNOzMzMjE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTA0OzExOjAzOjMyIEFNOzM7MzQxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to calculate F, when C is given"/>
+            <declare name="c, f" type="Real" array="False" size=""/>
+            <output expression="&quot;please enter your celcius=&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="f" expression="9/5*c+32"/>
+            <output expression="&quot;the value of F=&quot;&amp;f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
