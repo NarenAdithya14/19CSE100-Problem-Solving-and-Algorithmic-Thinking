@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:02:11 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTE4OzA5OjA3OjM1IEFNOzMzMjc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA4NzsyMDIyLTExLTE4OzEwOjAyOjExIEFNOzI7MzQxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a" type="String" array="False" size=""/>
+            <comment text="n=name, a=account number"/>
+            <declare name="b, p, w, m" type="Real" array="False" size=""/>
+            <comment text="b=bank balance,p= pin,w= amount wanted,m= new balance"/>
+            <output expression="&quot;Enter your name =&quot;" newline="False"/>
+            <input variable="n"/>
+            <output expression="&quot;enter your account number =&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter your bank balance =&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="b&gt;500">
+                <then>
+                    <output expression="&quot;enter your pin =&quot;" newline="True"/>
+                    <input variable="p"/>
+                    <if expression="p=1234">
+                        <then>
+                            <output expression="&quot;amount to be withdrawn =&quot;" newline="True"/>
+                            <input variable="w"/>
+                            <assign variable="m" expression="b-w"/>
+                            <if expression="m&gt;500">
+                                <then>
+                                    <output expression="&quot;amount withdrawn,and here is your new balance=&quot;&amp;m" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;transaction failed as your new balance is below the minimum balance&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;pin entered is wrong&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;not applicable&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
