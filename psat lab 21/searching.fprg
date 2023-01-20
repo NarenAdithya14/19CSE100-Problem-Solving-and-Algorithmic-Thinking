@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:08:35 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA5MTsyMDIzLTAxLTIwOzA5OjA3OjUxIEFNOzMzMTM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA5MTsyMDIzLTAxLTIwOzEwOjA4OjM1IEFNOzE7MzQxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, p" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="p" expression="-1"/>
+            <output expression="&quot;enter the number of elements in array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="array" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter element array&quot;&amp;i" newline="True"/>
+                <input variable="array[i]"/>
+            </for>
+            <output expression="&quot;enter the elements to be found in array&quot;" newline="True"/>
+            <input variable="j"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="array[i]==j">
+                    <then>
+                        <assign variable="p" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="p==-1">
+                <then>
+                    <output expression="&quot;element not in array&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;elements found in array index is&quot;&amp;i" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

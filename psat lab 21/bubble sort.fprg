@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22050"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:57:39 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA5MTsyMDIzLTAxLTIwOzEwOjA5OjA1IEFNOzMzMDY="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA1MDsyMDIyMjNNQVlDMDA5MTsyMDIzLTAxLTIwOzEwOjU3OjM5IEFNOzI7MzQyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, p, q, r" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number elements in array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="array" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter element number&quot;&amp;i" newline="True"/>
+                <input variable="array[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="i+1" end="n-1" direction="inc" step="1">
+                    <assign variable="p" expression="array[i]"/>
+                    <assign variable="q" expression="array[j]"/>
+                    <if expression="array[i]&lt;array[j]">
+                        <then>
+                            <assign variable="array[i]" expression="q"/>
+                            <assign variable="array[j]" expression="p"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <output expression="&quot;sorted array after pass&quot;&amp;i" newline="True"/>
+                <for variable="r" start="0" end="n-1" direction="inc" step="1">
+                    <output expression="array[r]&amp;&quot;,&quot;" newline="True"/>
+                </for>
+            </for>
+            <output expression="&quot;sorted array is&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="array[i]&amp;&quot;,&quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
